@@ -1,0 +1,108 @@
+* {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 100px;
+    justify-content: right;
+    gap: 40px;
+    align-items: center;
+    border-bottom: solid;
+    background-color: whitesmoke;
+    border-bottom-color:#B2B6BB;
+    border-bottom-width: 1px;
+    z-index: 100;
+}
+
+@keyframes fade-in
+{
+  0% {
+    opacity: 0.1;
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: #34568A;
+    padding: 5px 10px;
+}
+
+header li a:hover {
+    color: white;
+    background-color: #34568A;
+    border:none;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+section {
+    padding-top: 100px;
+    position: relative;
+    animation: fade-in 2s;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: #34568A;
+    padding: 5px 10px;
+}
+
+.part {
+    height:800px;
+    background-color: #34568A;
+    width: 1450px;
+    color: white;
+ }
+
+ svg {
+    width: 1450px;
+}

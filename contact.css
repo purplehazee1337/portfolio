@@ -1,0 +1,111 @@
+body {
+    background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%
+  }
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.back_arrow{
+    cursor: pointer;
+}
+
+.back_arrow:hover{
+    opacity: 0.7;
+}
+
+.st1{
+    fill:#34568A;
+}
+.st2{
+    fill: whitesmoke;
+    stroke:#B2B6BB;
+    stroke-width:1.3308;
+    stroke-miterlimit:10;
+}
+
+.st0 {
+    fill:none;
+    stroke:#34568A;
+    stroke-width:49.373;
+    stroke-miterlimit:10;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 1800;
+    animation: dash 5s infinite reverse ease-out;
+    animation-delay: -3s;
+  }
+  
+  @keyframes dash {
+    
+
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+.main{
+    animation: fade-in 3s;
+}
+
+  @keyframes fade-in
+{
+  0% {
+    opacity: 0.1;
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button{
+  cursor: pointer;
+}
+
+.button:hover{
+  opacity: 0.7;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  transition: filter 0.15s ,opacity 0.15s;
+}
+
+.button:active{
+  opacity: 0.5;
+}
+
+@keyframes notificationAppear 
+{
+  0% {
+    opacity: 0;
+
+  }
+  50% {
+    opacity: 0.8;
+
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.copiedTel {
+  fill:#34568A;
+  opacity: 0;
+}
+
+.copiedEmail {
+  fill:#34568A;
+  opacity: 0;
+}
