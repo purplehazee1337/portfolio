@@ -59,6 +59,14 @@ scroll-behavior: smooth;
     padding: 5px 10px;
 }
 
+.nav li a:hover {
+    color: white;
+    background-color: #34568A;
+    border:none;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+
 section {
     display: flex;
     flex-direction: column;
